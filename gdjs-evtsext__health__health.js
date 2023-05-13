@@ -295,15 +295,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.onCreatedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -391,17 +389,6 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObj
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3= [];
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects4= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition3IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition3IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -416,16 +403,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList0
 
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2 */
 
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth() > (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MaxHealth((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth((gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth()));
@@ -448,38 +436,39 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObj
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealthRegenRate() != 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth() < (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MaxHealth((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getTimerElapsedTimeInSecondsOrNaN("__Health.TimeSinceLastHit") > (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealthRegenDelay()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}}
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 }
-if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth(gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth() + ((gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealthRegenRate()) * gdjs.evtTools.runtimeScene.getElapsedTimeInSeconds(runtimeScene)));
@@ -497,6 +486,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList0
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -536,16 +526,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList2
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2, gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints() == 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).RenewShieldDuration((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -558,6 +549,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObj
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2, gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects3);
 
@@ -580,16 +572,17 @@ gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsCont
 
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2 */
 
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints() > (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxShieldPoints()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints((gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxShieldPoints()));
@@ -612,38 +605,39 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObj
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldRegenRate() != 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints() < (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxShieldPoints()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getTimerElapsedTimeInSecondsOrNaN("__Health.TimeSinceLastHit") > (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldRegenDelay()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}}
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
 }
-if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList4(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -658,23 +652,22 @@ gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.eventsList4
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2);
 
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).IsShieldActive((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition0IsTrue_0.val ) {
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditionTrue_1.val = eventsFunctionContext.getOnceTriggers().triggerOnce(13651580);
+gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(22592884);
 }
-}}
-if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.condition1IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(0);
@@ -689,6 +682,7 @@ if (gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.conditi
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.doStepPreEventsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -814,17 +808,6 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects4= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition3IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition2IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition3IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -840,12 +823,11 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList0 = function(
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1, gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1.val = (gdjs.randomFloatInRange(0, 1) < (( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChanceToDodge()));
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (gdjs.randomFloatInRange(0, 1) < (( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChanceToDodge()));
 }
-}if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsJustDodged(true);
@@ -863,6 +845,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1.val = (
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2, gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3);
 
@@ -880,27 +863,28 @@ gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObject
 
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPercentDamageReduction() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() * (1 - Math.min(1, (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPercentDamageReduction()))));
@@ -933,23 +917,22 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList2(runtimeScen
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1, gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("UseArmor") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("UseArmor") : false);
 }
-}if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList3(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -965,16 +948,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList3(runtimeScen
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2, gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBlockExcessDamage() ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied(0);
@@ -998,16 +982,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length
 
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getBlockExcessDamage()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() - ((gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints())));
@@ -1034,16 +1019,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2, gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3);
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() <= (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints() - ((gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied())));
@@ -1070,16 +1056,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects3.length
 
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() > (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setShieldDamageTaken((gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints()));
@@ -1106,34 +1093,33 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList5(runtimeScen
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1, gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition2IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("UseShield") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("UseShield") : false);
 }
-}if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).IsShieldActive((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;}}
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length = k;
 }
-if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsShieldJustDamaged(true);
@@ -1154,6 +1140,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList6(runtimeScen
 {
 
 
+let isConditionTrue_0 = false;
 {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1170,16 +1157,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList6(runtimeScen
 
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetJustDamaged(true, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -1238,16 +1226,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitContext.eventsList9(runtimeScen
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).IsDamageCooldownActive((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HitContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HitContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setDamageToBeApplied((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("DamageValue")) || 0 : 0));
@@ -1346,15 +1335,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.HealthContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth()); }}}
@@ -1434,16 +1421,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1465,16 +1449,17 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth(Math.min((gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth()), (gdjs.evtsExt__Health__Health.Health.prototype.SetHealthContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth())));
@@ -1557,15 +1542,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetCurrentHealthContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1650,11 +1633,6 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects3= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition2IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.HealContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -1669,16 +1647,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealContext.eventsList0 = function
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2);
 
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth() == 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHealToBeApplied((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("HealValue")) || 0 : 0));
@@ -1699,27 +1678,28 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.lengt
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2);
 
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getAllowOverHealing()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length = k;}}
-if (gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length = k;
+}
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHealToBeApplied(Math.min((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("HealValue")) || 0 : 0), (gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth()) - (gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth())));
@@ -1739,6 +1719,7 @@ if (gdjs.evtsExt__Health__Health.Health.prototype.HealContext.condition1IsTrue_0
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects2.length ;i < len;++i) {
@@ -1759,6 +1740,7 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.HealContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1852,15 +1834,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.MaxHealthContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxHealth()); }}}
@@ -1940,16 +1920,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -1971,16 +1948,17 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth() > (gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MaxHealth((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentHealth((gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthOpContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MaxHealth((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))));
@@ -2063,15 +2041,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxHealthContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2155,15 +2131,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenRateContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealthRegenRate()); }}}
@@ -2243,15 +2217,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2335,15 +2307,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenRateContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2427,15 +2397,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext = {}
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownDurationContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageCooldown()); }}}
@@ -2515,15 +2483,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2607,15 +2573,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetCooldownDurationContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2699,15 +2663,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.HealthRegenDelayContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealthRegenDelay()); }}}
@@ -2787,15 +2749,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2879,15 +2839,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHealthRegenDelayContext.GDObjectObjects1.length ;i < len;++i) {
@@ -2971,15 +2929,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ChanceToDodgeContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getChanceToDodge()); }}}
@@ -3059,15 +3015,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3151,15 +3105,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetChanceToDodgeContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3243,15 +3195,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.FlatDamageReductionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getFlatDamageReduction()); }}}
@@ -3331,15 +3281,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext = 
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3423,15 +3371,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext = {}
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetFlatDamageReductionContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3515,15 +3461,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext = {}
 gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.PercentDamageReductionContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getPercentDamageReduction()); }}}
@@ -3603,15 +3547,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3695,15 +3637,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext =
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetPercentDamageReductionContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3787,19 +3727,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3813,12 +3747,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 {
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
 }
-}if (gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.AllowOverHealingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setAllowOverHealing(true);
@@ -3901,19 +3834,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects1.length ;i < len;++i) {
@@ -3927,12 +3854,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 {
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
 }
-}if (gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.SetHitAtLeastOnceContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setHitAtLeastOnce(true);
@@ -4015,19 +3941,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects1.length ;i < len;++i) {
@@ -4041,12 +3961,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 {
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
 }
-}if (gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.SetJustDamagedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setIsHealthJustDamaged(true);
@@ -4129,10 +4048,6 @@ gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -4147,16 +4062,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.event
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1.length;i<l;++i) {
     if ( !(gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).HitAtLeastOnce((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).SetHitAtLeastOnce(true, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -4169,6 +4085,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObj
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.TriggerDamageCooldownContext.GDObjectObjects1.length ;i < len;++i) {
@@ -4251,10 +4168,6 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -4268,6 +4181,7 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.eventsList0 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -4278,16 +4192,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.eventsList0 
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHitAtLeastOnce() ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.HitAtLeastOnceContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -4365,16 +4280,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -4385,16 +4297,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.eventsList0 =
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsHealthJustDamaged() ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsJustDamagedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -4472,16 +4385,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -4492,16 +4402,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.eventsList0 = 
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsJustHealed() ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsJustHealedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -4579,18 +4490,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext = {}
 gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition2IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition3IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -4601,38 +4507,39 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.even
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition1IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition2IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHitAtLeastOnce() ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageCooldown() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition1IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[i].getTimerElapsedTimeInSecondsOrNaN("__Health.TimeSinceLastHit") < (gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageCooldown()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition2IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length = k;}}
+gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.GDObjectObjects1.length = k;
 }
-if (gdjs.evtsExt__Health__Health.Health.prototype.IsDamageCooldownActiveContext.condition2IsTrue_0.val) {
+}
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -4710,16 +4617,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext = {
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = 0; }}}
 
@@ -4730,16 +4634,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.eve
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).IsDamageCooldownActive((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1 */
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = Math.max(0, (( gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageCooldown()) - (( gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.DamageCooldownRemainingContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__Health.TimeSinceLastHit"))); }}}
 
@@ -4818,16 +4723,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -4838,16 +4740,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.eventsList0 = functi
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentHealth() <= 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsDeadContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -4925,15 +4828,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.TimeSinceLastHitContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__Health.TimeSinceLastHit")); }}}
@@ -5013,15 +4914,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageTakenContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getDamageToBeApplied()); }}}
@@ -5101,15 +5000,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.MaxShieldContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxShieldPoints()); }}}
@@ -5189,15 +5086,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -5281,15 +5176,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldContext.GDObjectObjects1.length ;i < len;++i) {
@@ -5373,15 +5266,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetMaxShieldPointsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -5465,15 +5356,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ShieldPointsContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints()); }}}
@@ -5553,15 +5442,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -5645,15 +5532,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldPointsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -5737,15 +5622,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenRateContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldRegenRate()); }}}
@@ -5825,15 +5708,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -5917,15 +5798,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenRateContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6009,15 +5888,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ShieldRegenDelayContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldRegenDelay()); }}}
@@ -6097,15 +5974,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6189,15 +6064,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldRegenDelayContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6281,15 +6154,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ShieldDurationContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration()); }}}
@@ -6369,15 +6240,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationOpContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6461,15 +6330,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldDurationContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6553,15 +6420,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.RenewShieldDurationContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6644,19 +6509,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6671,16 +6530,17 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMaxShieldPoints() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1 */
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setCurrentShieldPoints(Math.min((typeof eventsFunctionContext !== 'undefined' ? Number(eventsFunctionContext.getArgument("ShieldPoints")) || 0 : 0), (gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).MaxShield((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)))));
@@ -6693,12 +6553,11 @@ gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObje
 {
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("RenewShieldDuration") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("RenewShieldDuration") : false);
 }
-}if (gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.ActivateShieldContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior")).RenewShieldDuration((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -6782,19 +6641,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.conditionTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.condition0IsTrue_1 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.condition1IsTrue_1 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects1.length ;i < len;++i) {
@@ -6808,12 +6661,11 @@ gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health_
 {
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.condition0IsTrue_0.val = false;
-{
-{gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.conditionTrue_1 = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.condition0IsTrue_0;
-gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.conditionTrue_1.val = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = (typeof eventsFunctionContext !== 'undefined' ? !!eventsFunctionContext.getArgument("Value") : false);
 }
-}if (gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.condition0IsTrue_0.val) {
+if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects1.length ;i < len;++i) {
     gdjs.evtsExt__Health__Health.Health.prototype.SetShieldBlockExcessDamageContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._setBlockExcessDamage(true);
@@ -6896,16 +6748,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -6916,16 +6765,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.eventsL
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsShieldJustDamaged() ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsShieldJustDamagedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -7003,16 +6853,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -7023,16 +6870,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.eventsList0 = 
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getIsJustDodged() ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsJustDodgedContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -7111,11 +6959,6 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObje
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2= [];
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects3= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition1IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition2IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
@@ -7131,16 +6974,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.eventsList0 
 gdjs.copyArray(gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1, gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2);
 
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration() <= 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects2.length = k;
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -7150,27 +6994,28 @@ gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObje
 
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1 */
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val = false;
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition1IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length = k;}if ( gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val ) {
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length;i<l;++i) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[i].getTimerElapsedTimeInSecondsOrNaN("__Health.ShieldDuration") < (gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration()) ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition1IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length = k;}}
-if (gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition1IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length = k;
+}
+if (isConditionTrue_0) {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = true; }}}
 
 }
@@ -7181,6 +7026,7 @@ if (gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.conditio
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = false; }}}
 
@@ -7198,16 +7044,17 @@ if (gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.conditio
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getCurrentShieldPoints() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 
 { //Subevents
 gdjs.evtsExt__Health__Health.Health.prototype.IsShieldActiveContext.eventsList0(runtimeScene, eventsFunctionContext);} //End of subevents
@@ -7289,16 +7136,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.condition0IsTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.condition1IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = 0; }}}
 
@@ -7309,16 +7153,17 @@ gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.eventsL
 
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1);
 
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.condition0IsTrue_0.val = false;
-{
-for(var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1.length;i<l;++i) {
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1.length;i<l;++i) {
     if ( gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1[i].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration() > 0 ) {
-        gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.condition0IsTrue_0.val = true;
+        isConditionTrue_0 = true;
         gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1[k] = gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1[i];
         ++k;
     }
 }
-gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1.length = k;}if (gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.condition0IsTrue_0.val) {
+gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1.length = k;
+if (isConditionTrue_0) {
 /* Reuse gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1 */
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = Math.max(0, (( gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDuration()) - (( gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.ShieldTimeRemainingContext.GDObjectObjects1[0].getTimerElapsedTimeInSeconds("__Health.ShieldDuration"))); }}}
 
@@ -7397,15 +7242,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext = {}
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.PreviousDamageToShieldContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getShieldDamageTaken()); }}}
@@ -7485,15 +7328,13 @@ gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext = {};
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.GDObjectObjects1= [];
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__Health__Health.Health.prototype.PreviousHealAmountContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getHealToBeApplied()); }}}

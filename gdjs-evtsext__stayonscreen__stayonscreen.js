@@ -94,15 +94,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEvents
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEventsContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEventsContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEventsContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEventsContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEventsContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEventsContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.doStepPostEventsContext.GDObjectObjects1.length ;i < len;++i) {
@@ -194,15 +192,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginTopContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMarginTop()); }}}
@@ -282,15 +278,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopCont
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginTopContext.GDObjectObjects1.length ;i < len;++i) {
@@ -374,15 +368,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomCont
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginBottomContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMarginBottom()); }}}
@@ -462,15 +454,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomC
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginBottomContext.GDObjectObjects1.length ;i < len;++i) {
@@ -554,15 +544,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContex
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginLeftContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMarginLeft()); }}}
@@ -642,15 +630,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftCon
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginLeftContext.GDObjectObjects1.length ;i < len;++i) {
@@ -734,15 +720,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightConte
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.GDObjectObjects1);
 {if (typeof eventsFunctionContext !== 'undefined') { eventsFunctionContext.returnValue = (( gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.GDObjectObjects1.length === 0 ) ? 0 :gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.MarginRightContext.GDObjectObjects1[0].getBehavior(eventsFunctionContext.getBehaviorName("Behavior"))._getMarginRight()); }}}
@@ -822,15 +806,13 @@ gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightCo
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightContext.GDObjectObjects1= [];
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightContext.GDObjectObjects2= [];
 
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightContext.conditionTrue_0 = {val:false};
-gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightContext.condition0IsTrue_0 = {val:false};
-
 
 gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightContext.eventsList0 = function(runtimeScene, eventsFunctionContext) {
 
 {
 
 
+let isConditionTrue_0 = false;
 {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightContext.GDObjectObjects1);
 {for(var i = 0, len = gdjs.evtsExt__StayOnScreen__StayOnScreen.StayOnScreen.prototype.SetMarginRightContext.GDObjectObjects1.length ;i < len;++i) {
